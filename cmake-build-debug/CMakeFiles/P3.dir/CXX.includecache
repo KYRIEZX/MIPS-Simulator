@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/killerwill/CLionProjects/P3/latch_reg.h
+string
+-
+
+/Users/killerwill/CLionProjects/P3/main.cpp
+iostream
+-
+sstream
+-
+string
+-
+latch_reg.h
+/Users/killerwill/CLionProjects/P3/latch_reg.h
+fstream
+-
+vector
+-
+sstream
+-
+cmath
+-
+
