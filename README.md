@@ -1,2 +1,11 @@
 # MIPS-Simulator
+### Introduction
+  This project is the final project of the ECE 510: Foundations of Computer Engineering I took in UMass Amherst.This assignment gave me experience in programming in C++ and the operation of a MIPS pipelined processor. Further, I gained insight into how multiple events that occur in parallel can be simulated using a sequential machine.
 
+## 1.Problem Statement
+  This assignment requires a simple 5 stage pipelined machine to be simulated. The simulator should be capable of implementing the MIPS architecture on a cycle by cycle basis. The simulator must be cycle accurate with respect to contents of the registers, but need not be faithful to other hardware details such as control signals. The output of the simulator, in addition to the register contents and latch values should include the utilization factor of each functional unit and the total time in cycles to execute a set of instructions. Implement the simulator according to the specifications described below in C++. Submit the code, simulation results and a project description write-up.
+### 1.1 Instructions to be implemented
+  The simulator should implement the following instructions: add, sub, addi, mul, lw, sw, beq, lui, and, andi, or, ori, sll, srl, slti, and sltiu. Note that these instructions operate integer instructions only. The MIPS instruction format can be used for all instructions except mul. Assume the syntax for mul is mul $a,$b,$c, meaning that we multiply the contents of $b and $c, the least significant 32 bits of results are placed in register $a and the most significant 32-bits of the result will be stored in register $(a+1). For example, mul $t0, $t8, $t9 will store lower 32-bits of the product of $t8 * $t9 in register $t0 and the upper 32-bits of the product in register $t1 (Hint: See MIPS green sheet instructions summary for registers numbering). This is different from the mult instruction in MIPS. Assume the opcode and function code for mul to be same as that of mult.
+### 1.2 Inputs to the simulator
+  1) MIPS machine code as a text file: Convert the assembly level instructions to machine level by using https://www.eg.bucknell.edu/~csci320/mips_web/ or http://www.kurtm.net/mipsasm/
+  
